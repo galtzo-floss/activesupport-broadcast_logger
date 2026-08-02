@@ -4,3 +4,10 @@ module Activesupport
     # See the writing guide of rbs: https://github.com/ruby/rbs#guides
   end
 end
+
+module ActiveSupport
+  module Version
+    VERSION: String
+  end
+  VERSION: String
+end

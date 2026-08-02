@@ -139,8 +139,8 @@ RSpec.describe ActiveSupport::BroadcastLogger do
   it "#<< shovels the value into all loggers" do
     @logger << "foo"
 
-    assert_equal %w{foo}, @log1.chevrons
-    assert_equal %w{foo}, @log2.chevrons
+    assert_equal %w[foo], @log1.chevrons
+    assert_equal %w[foo], @log2.chevrons
   end
 
   it "#level= assigns the level to all loggers" do

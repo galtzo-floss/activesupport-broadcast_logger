@@ -24,4 +24,4 @@ end
 require "rubygems"
 require "bundler/setup"
 
-load Gem.bin_path("appraisal", "appraisal")
+load Gem.bin_path("appraisal2", "appraisal")
