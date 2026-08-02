@@ -292,7 +292,7 @@ See [LICENSE.md][📄license] for the official copyright notice.
 <details markdown="1">
 <summary>Copyright holders</summary>
 
-- Copyright (c) 2024-2026 Peter Boling
+- Copyright (c) 2024-2026 Peter H. Boling
 - Copyright (c) 2025 Aboling0
 
 </details>
@@ -521,3 +521,14 @@ Thanks for RTFM. ☺️
 [💎appraisal2]: https://github.com/appraisal-rb/appraisal2
 [💎appraisal2-img]: https://img.shields.io/badge/appraised_by-appraisal2-34495e.svg?plastic&logo=ruby&logoColor=white
 [💎d-in-dvcs]: https://railsbling.com/posts/dvcs/put_the_d_in_dvcs/
+
+<!-- kettle-jem:metadata:start -->
+| Field | Value |
+|---|---|
+| Package | activesupport-broadcast_logger |
+| Description | 💎 Rails v8 ActiveSupport::BroadcastLogger, fixed & backported to Rails v5.2+ & Ruby 2.7+ |
+| Homepage | https://github.com/galtzo-floss/activesupport-broadcast_logger |
+| Source | https://github.com/galtzo-floss/activesupport-broadcast_logger |
+| License | `MIT` |
+| Funding | https://github.com/sponsors/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/galtzo-floss, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/activesupport-broadcast_logger, https://www.buymeacoffee.com/pboling |
+<!-- kettle-jem:metadata:end -->
