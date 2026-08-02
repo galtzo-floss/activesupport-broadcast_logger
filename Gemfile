@@ -1,40 +1,84 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+# kettle-jem:freeze
+# To retain chunks of comments & code during kettle-jem templating:
+# Wrap custom sections with freeze markers (e.g., as above and below this comment chunk).
+# kettle-jem will then preserve content between those markers across template runs.
+# kettle-jem:unfreeze
 
-git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+source "https://gem.coop"
+
+git_source(:codeberg) { |repo_name| "https://codeberg.org/#{repo_name}" }
 git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 
 #### IMPORTANT #######################################################
 # Gemfile is for local development ONLY; Gemfile is NOT loaded in CI #
 ####################################################### IMPORTANT ####
 
-# For Ruby version specific dependencies
-ruby_version = Gem::Version.create(RUBY_VERSION)
-
-# Include dependencies from <gem name>.gemspec
+# Include dependencies from activesupport-broadcast_logger.gemspec
 gemspec
 
-platform :mri do
-  # Debugging - Ensure ENV["DEBUG"] == "true" to use debuggers within spec suite
-  if ruby_version < Gem::Version.create("2.7")
-    # Use byebug in code
-    gem "debug", require: false
-  else
-    # Use binding.break, binding.b, or debugger in code
-    gem "debug", ">= 1.0.0"
+gem "kettle-family", "~> 1.2", ">= 1.2.22"
+
+
+# Local workspace dependency wiring for *_local.gemfile overrides
+gem "nomono", "~> 1.1", ">= 1.1.3", require: false # ruby >= 3.2.0
+
+# Direct sibling dependencies (env-switched via GALTZO_FLOSS_DEV)
+direct_sibling_gems = %w[
+  activesupport-logger
+]
+direct_sibling_dev = ENV.fetch("GALTZO_FLOSS_DEV", "")
+direct_sibling_local =
+  !direct_sibling_dev.empty? && !%w[false 0 no off].include?(direct_sibling_dev.downcase)
+direct_sibling_templating = ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
+
+if direct_sibling_gems.any? &&
+    (direct_sibling_local ||
+      ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?)
+  direct_sibling_dev_was_set = ENV.key?("GALTZO_FLOSS_DEV")
+  direct_sibling_dev_original = ENV.fetch("GALTZO_FLOSS_DEV", nil)
+  require "nomono/bundler"
+  begin
+    ENV["GALTZO_FLOSS_DEV"] = File.expand_path("..", __dir__) if direct_sibling_templating && !direct_sibling_local
+
+    eval_nomono_gems(
+      gems: direct_sibling_gems,
+      prefix: "GALTZO_FLOSS",
+      path_env: "GALTZO_FLOSS_DEV",
+      root: ["src", "my", "galtzo-floss"]
+    )
+  ensure
+    if direct_sibling_templating && !direct_sibling_local
+      if direct_sibling_dev_was_set
+        ENV["GALTZO_FLOSS_DEV"] = direct_sibling_dev_original
+      else
+        ENV.delete("GALTZO_FLOSS_DEV")
+      end
+    end
   end
-
-  # Dev Console - Binding.pry - Irb replacement
-  gem "pry", "~> 0.14"                     # ruby >= 2.0
-
-  gem "reek", "~> 6.4"
 end
 
-# Security Audit
-if ruby_version >= Gem::Version.create("3")
-  # NOTE: Audit fails on Ruby 2.7 because nokogiri has dropped support for Ruby < 3
-  # See: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-r95h-9x8f-r3f7
-  # We can't add upgraded nokogiri here unless we are developing on Ruby 3+
-  eval_gemfile "gemfiles/modular/audit.gemfile"
-end
+# Templating (env-switched: STRUCTUREDMERGE_DEV=/path/to/structuredmerge/ruby/gems for local paths)
+eval_gemfile "gemfiles/modular/templating.gemfile" if ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
+
+# Debugging
+eval_gemfile "gemfiles/modular/debug.gemfile"
+
+# Code Coverage (env-switched: KETTLE_DEV_DEV=true for local paths)
+eval_gemfile "gemfiles/modular/coverage.gemfile"
+
+# Linting
+eval_gemfile "gemfiles/modular/style.gemfile"
+
+# Documentation
+eval_gemfile "gemfiles/modular/documentation.gemfile"
+
+# Optional
+eval_gemfile "gemfiles/modular/optional.gemfile"
+
+### Std Lib Extracted Gems
+eval_gemfile "gemfiles/modular/x_std_libs.gemfile"
+
+# See unlocked_deps appraisal for more details on irb inclusion
+gem "irb", "~> 1.17" # ruby >= 2.7
