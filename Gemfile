@@ -19,7 +19,7 @@ platform :mri do
   # Debugging - Ensure ENV["DEBUG"] == "true" to use debuggers within spec suite
   if ruby_version < Gem::Version.create("2.7")
     # Use byebug in code
-    gem "byebug", ">= 11"
+    gem "debug", require: false
   else
     # Use binding.break, binding.b, or debugger in code
     gem "debug", ">= 1.0.0"
@@ -38,5 +38,3 @@ if ruby_version >= Gem::Version.create("3")
   # We can't add upgraded nokogiri here unless we are developing on Ruby 3+
   eval_gemfile "gemfiles/modular/audit.gemfile"
 end
-
-gem "appraisal", github: "pboling/appraisal", branch: "galtzo"
