@@ -1,0 +1,124 @@
+{
+  "#   - Ruby 2.7\n#   - Ruby 3.0": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        41,
+        50,
+        60
+      ]
+    }
+  ],
+  "#   - Ruby 3.0\n#   - Ruby 3.1": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        51,
+        61
+      ]
+    }
+  ],
+  "#   - Ruby 3.1\n#   - Ruby 3.2": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        62,
+        71
+      ]
+    }
+  ],
+  "#   - Ruby 3.2\n#   - Ruby 3.3": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        72,
+        81
+      ]
+    }
+  ],
+  "# Compat: Ruby >= 2.5\n# Test Matrix:": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        31,
+        39
+      ]
+    }
+  ],
+  "# Compat: Ruby >= 2.7\n# Test Matrix:": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        48,
+        58
+      ]
+    }
+  ],
+  "# Test Matrix:\n#   - Ruby 2.7": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        24,
+        32,
+        40,
+        49,
+        59
+      ]
+    }
+  ],
+  "- 73.68% documented\n### Added": [
+    {
+      "file": "CHANGELOG.md",
+      "lines": [
+        16,
+        39,
+        58
+      ]
+    }
+  ],
+  "appraisal: \"as-8-0\"\ntaskname: \"spec\"": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        41,
+        49
+      ]
+    }
+  ],
+  "gem \"stringio\", \">= 3.0\"\nremove_gem \"appraisal\" # only present because it must be in the gemfile because we target a git branch": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        11,
+        19
+      ]
+    }
+  ],
+  "gemfile: \"Appraisal.root\"\nrubygems: latest": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        43,
+        51
+      ]
+    }
+  ],
+  "if: ${{ github.event_name != 'pull_request' }}\ncontinue-on-error: ${{ matrix.experimental != 'false' }}": [
+    {
+      "file": ".github/workflows/coverage.yml",
+      "lines": [
+        71,
+        79
+      ]
+    }
+  ],
+  "taskname: \"spec\"\ngemfile: \"Appraisal.root\"": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        42,
+        50
+      ]
+    }
+  ]
+}
