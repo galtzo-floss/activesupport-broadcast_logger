@@ -3,7 +3,6 @@ require "active_support/version"
 require "version_gem"
 
 # This library
-require_relative "activesupport/broadcast_logger/version"
 
 # Loads supporting features from Rails v5, 6, or 7
 require "active_support/core_ext/module/delegation"
@@ -23,6 +22,7 @@ require "activesupport-logger"
 # All this reloading might print warnings about redefined methods, and this is expected.
 # Technically it might even break things, but we don't expect it to, and YMMV.
 require_relative "activesupport/broadcast_logger"
+require_relative "activesupport/broadcast_logger/version"
 
 # Namespace for the Version of this gem (and nothing else)
 module Activesupport
