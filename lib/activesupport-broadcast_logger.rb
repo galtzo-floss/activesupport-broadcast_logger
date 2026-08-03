@@ -12,16 +12,6 @@ require "active_support/core_ext/object/blank"
 # Require the extracted-from-Rails-8 ActiveSupport::Logger
 require "activesupport-logger"
 
-# Require original broadcast logging from whatever version of Rails is loaded,
-#   so that it will be properly monkey patched.
-# Versions of Rails < 7.1 do not have it, which is fine,
-#   as the purpose of this gem is to make it available, while also fixing it.
-begin
-  require "active_support/broadcast_logger"
-rescue LoadError
-  warn("[Activesupport::BroadcastLogger] ActiveSupport::BroadcastLogger is not available. Your Rails will be enhanced to have it!")
-end
-
 # !!ORDER MATTERS!!
 
 # Extracted from:

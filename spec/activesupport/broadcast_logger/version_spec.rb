@@ -9,6 +9,6 @@ RSpec.describe Activesupport::BroadcastLogger::Version do
     ].select { |path| File.file?(path) }
     anonymous_namespace = AnonymousLoader.load(files: paths)
 
-    expect(anonymous_namespace::ActiveSupport::Version::VERSION).to eq(described_class::VERSION)
+    expect(anonymous_namespace::Activesupport::BroadcastLogger::Version::VERSION).to eq(described_class::VERSION)
   end
 end
