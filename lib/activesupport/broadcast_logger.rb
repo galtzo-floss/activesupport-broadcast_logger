@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require "version_gem"
-require_relative "broadcast_logger/version"
-
 module ActiveSupport
   # = Active Support Broadcast Logger
   #
@@ -221,8 +218,4 @@ module ActiveSupport
       @broadcasts.any? { |logger| logger.respond_to?(method, include_all) }
     end
   end
-end
-
-ActiveSupport::Version.class_eval do
-  extend VersionGem::Basic
 end
