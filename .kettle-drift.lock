@@ -9,6 +9,44 @@
       ]
     }
   ],
+  "action: remove_modular_gem\nreason: \"The gemspec owns the project's documentation dependency.\"": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        102,
+        122
+      ]
+    }
+  ],
+  "action: remove_modular_gem\nreason: \"The gemspec owns the project's style dependency.\"": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        107,
+        112,
+        117
+      ]
+    }
+  ],
+  "direct: activesupport-broadcast_logger.gemspec\nmodular: gemfiles/modular/documentation.gemfile": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        100,
+        120
+      ]
+    }
+  ],
+  "direct: activesupport-broadcast_logger.gemspec\nmodular: gemfiles/modular/style.gemfile": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        105,
+        110,
+        115
+      ]
+    }
+  ],
   "eval_gemfile \"modular/x_std_libs.gemfile\"\nremove_gem \"appraisal\" # only present because it must be in the gemfile because we target a git branch": [
     {
       "file": "Appraisals",
@@ -17,6 +55,25 @@
         61,
         140,
         146
+      ]
+    }
+  ],
+  "modular: gemfiles/modular/documentation.gemfile\naction: remove_modular_gem": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        101,
+        121
+      ]
+    }
+  ],
+  "modular: gemfiles/modular/style.gemfile\naction: remove_modular_gem": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        106,
+        111,
+        116
       ]
     }
   ]
