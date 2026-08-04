@@ -3,6 +3,12 @@
     [251, 3, 16, "Rake/DuplicateTask: Task `test` is defined at both Rakefile:244 and Rakefile:251.", 850263259],
     [254, 3, 16, "Rake/DuplicateTask: Task `spec` is defined at both Rakefile:230 and Rakefile:254.", 2494909563]
   ],
+  "gemfiles/modular/templating.gemfile:3018447732": [
+    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
+  ],
+  "spec/activesupport/broadcast_logger/version_spec.rb:1314089070": [
+    [3, 1, 54, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/broadcast_logger/version*_spec.rb`.", 432447555]
+  ],
   "spec/activesupport/broadcast_logger_spec.rb:3856026202": [
     [3, 1, 45, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/broadcast_logger*_spec.rb`.", 3293372633],
     [4, 3, 1568, "Lint/ConstantDefinitionInBlock: Do not define constants this way within a block.", 110657397],
