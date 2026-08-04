@@ -1,5 +1,5 @@
 require "anonymous_loader"
-require "activesupport-broadcast_logger"
+require "activesupport/broadcast_logger"
 RSpec.describe Activesupport::BroadcastLogger::Version do
   it_behaves_like "a Version module", described_class
 
