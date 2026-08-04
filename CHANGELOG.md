@@ -89,6 +89,8 @@ Please file a bug if you notice a violation of semantic versioning.
   legacy manual bundle install path, avoiding setup-time Bundler full-index
   failures against `gem.coop`.
 
+- Restore ActiveSupport BroadcastLogger version namespace after templating.
+
 ### Security
 
 ## [2.0.4] - 2025-02-24
