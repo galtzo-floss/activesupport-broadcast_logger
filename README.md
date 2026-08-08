@@ -21,6 +21,10 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+Provides the Rails 8 `ActiveSupport::BroadcastLogger` API as a backport for
+older supported Rails and Ruby versions. It broadcasts logger calls to multiple
+underlying loggers and exposes their combined severity state.
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -118,6 +122,11 @@ gem install activesupport-broadcast_logger
 ```
 
 ## ⚙️ Configuration
+
+The gem is configured by the logger targets passed to
+`ActiveSupport::BroadcastLogger.new` and by the normal ActiveSupport/Rails
+logger settings. It has no separate global configuration file. Load-order
+guidance in Basic Usage is part of the configuration contract.
 
 ## 🔧 Basic Usage
 
