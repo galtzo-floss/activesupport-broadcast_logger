@@ -8,7 +8,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "activesupport-broadcast_logger"
-  spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/activesupport/broadcast_logger/version.rb", mod) }::ActiveSupport::BroadcastLogger::Version::VERSION
+  spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/activesupport/broadcast_logger/version.rb", mod) }::ActiveSupport::BroadcastLoggerVersion::VERSION
   spec.authors = ["Peter Boling"]
   spec.email = ["floss@galtzo.com"]
 

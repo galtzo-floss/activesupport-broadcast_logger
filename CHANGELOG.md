@@ -103,6 +103,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Restore cross-gem README links for the Active Support logging family.
 
+- Move gemspec version loading out of the Active Support broadcast logger class hierarchy.
+
 ### Security
 
 ## [2.0.4] - 2025-02-24

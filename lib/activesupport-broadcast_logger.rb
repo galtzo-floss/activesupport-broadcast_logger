@@ -28,6 +28,6 @@ require_relative "activesupport/broadcast_logger/version"
 module Activesupport
 end
 
-ActiveSupport::BroadcastLogger::Version.class_eval do
+ActiveSupport::BroadcastLoggerVersion.class_eval do
   extend VersionGem::Basic
 end
