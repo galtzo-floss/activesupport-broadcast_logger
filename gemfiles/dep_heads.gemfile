@@ -2,6 +2,6 @@
 
 source "https://gem.coop"
 
-gem "activesupport", "~> 7.2.2"
-
 gemspec path: "../"
+
+eval_gemfile("modular/runtime_heads.gemfile")
