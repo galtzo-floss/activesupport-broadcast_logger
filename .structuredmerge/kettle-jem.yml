@@ -150,14 +150,14 @@ ruby:
   # test/development dependency assumptions. This is intentionally separate
   # from the gemspec required_ruby_version, which describes the published
   # runtime contract. Effective CI minimum is max(gemspec minimum, this value).
-  test_minimum: "2.7.0"
+  test_minimum: "3.1.0"
 
 # RubyGems packaging/runtime shape.
 rubygems:
   # Published runtime Ruby floor used for generated gemspec metadata and README
   # compatibility text. Omit this to derive the value from the gemspec.
   # ENV override: KJ_MIN_RUBY
-  min_ruby: "2.7.0"
+  min_ruby: "3.1.0"
   # VersionGem loading pattern.
   # auto      - preserve an existing lib/<entrypoint>/version_gem.rb dedicated
   #             entrypoint; otherwise use the inline main-entrypoint pattern

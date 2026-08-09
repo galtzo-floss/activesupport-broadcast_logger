@@ -30,10 +30,9 @@ underlying loggers and exposes their combined severity state.
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Works with JRuby | [![JRuby 9.4 Compat][💎jruby-9.4i]][🚎jruby-9.4-wf] [![JRuby 10.0 Compat][💎jruby-10.0i]][🚎jruby-10.0-wf] [![JRuby current Compat][💎jruby-c-i]][🚎10-j-wf] [![JRuby HEAD Compat][💎jruby-headi]][🚎3-hd-wf]|
-| Works with Truffle Ruby | [![Truffle Ruby 22.3 Compat][💎truby-22.3i]][🚎truby-22.3-wf] [![Truffle Ruby 23.0 Compat][💎truby-23.0i]][🚎truby-23.0-wf] [![Truffle Ruby 23.1 Compat][💎truby-23.1i]][🚎truby-23.1-wf] <br/> [![Truffle Ruby 24.2 Compat][💎truby-24.2i]][🚎truby-24.2-wf] [![Truffle Ruby 25.0 Compat][💎truby-25.0i]][🚎truby-25.0-wf] [![Truffle Ruby 33.0 Compat][💎truby-33.0i]][🚎truby-33.0-wf] [![Truffle Ruby current Compat][💎truby-c-i]][🚎9-t-wf] [![Truffle Ruby HEAD Compat][💎truby-headi]][🚎3-hd-wf]|
+| Works with Truffle Ruby | [![Truffle Ruby 23.1 Compat][💎truby-23.1i]][🚎truby-23.1-wf] <br/> [![Truffle Ruby 24.2 Compat][💎truby-24.2i]][🚎truby-24.2-wf] [![Truffle Ruby 25.0 Compat][💎truby-25.0i]][🚎truby-25.0-wf] [![Truffle Ruby 33.0 Compat][💎truby-33.0i]][🚎truby-33.0-wf] [![Truffle Ruby current Compat][💎truby-c-i]][🚎9-t-wf] [![Truffle Ruby HEAD Compat][💎truby-headi]][🚎3-hd-wf]|
 | Works with MRI Ruby 4 | [![Ruby current Compat][💎ruby-c-i]][🚎11-c-wf] [![Ruby HEAD Compat][💎ruby-headi]][🚎3-hd-wf]|
-| Works with MRI Ruby 3 | [![Ruby 3.0 Compat][💎ruby-3.0i]][🚎ruby-3.0-wf] [![Ruby 3.1 Compat][💎ruby-3.1i]][🚎ruby-3.1-wf] [![Ruby 3.2 Compat][💎ruby-3.2i]][🚎ruby-3.2-wf] [![Ruby 3.3 Compat][💎ruby-3.3i]][🚎ruby-3.3-wf] [![Ruby 3.4 Compat][💎ruby-3.4i]][🚎ruby-3.4-wf]|
-| Works with MRI Ruby 2 | [![Ruby 2.7 Compat][💎ruby-2.7i]][🚎ruby-2.7-wf]|
+| Works with MRI Ruby 3 | [![Ruby 3.1 Compat][💎ruby-3.1i]][🚎ruby-3.1-wf] [![Ruby 3.2 Compat][💎ruby-3.2i]][🚎ruby-3.2-wf] [![Ruby 3.3 Compat][💎ruby-3.3i]][🚎ruby-3.3-wf] [![Ruby 3.4 Compat][💎ruby-3.4i]][🚎ruby-3.4-wf]|
 | Support & Community | [![Join Me on Daily.dev's RubyFriends][✉️ruby-friends-img]][✉️ruby-friends] [![Get help from RubyForum][✉️ruby-forum-img]][✉️ruby-forum] [![Live Chat on Discord][✉️discord-invite-img-ftb]][✉️discord-invite] [![Get help from me on Upwork][👨🏼‍🏫expsup-upwork-img]][👨🏼‍🏫expsup-upwork] [![Get help from me on Codementor][👨🏼‍🏫expsup-codementor-img]][👨🏼‍🏫expsup-codementor] |
 | Source | [![Source on GitLab.com][📜src-gl-img]][📜src-gl] [![Source on CodeBerg.org][📜src-cb-img]][📜src-cb] [![Source on GitHub.com][📜src-gh-img]][📜src-gh] [![The best SHA: dQw4w9WgXcQ!][🧮kloc-img]][🧮kloc] |
 | Documentation | [![Current release on RubyDoc.info][📜docs-cr-rd-img]][🚎yard-current] [![YARD on Galtzo.com][📜docs-head-rd-img]][🚎yard-head] [![Maintainer Blog][🚂maint-blog-img]][🚂maint-blog] [![GitLab Wiki][📜gl-wiki-img]][📜gl-wiki] [![GitHub Wiki][📜gh-wiki-img]][📜gh-wiki] |
@@ -45,7 +44,7 @@ underlying loggers and exposes their combined severity state.
 ### Compatibility
 
 Compatible with MRI Ruby, JRuby, and TruffleRuby.
-CI workflows and Appraisals are generated for MRI Ruby 2.7.0+.
+CI workflows and Appraisals are generated for MRI Ruby 3.1.0+.
 This test floor is configured by `ruby.test_minimum` in `.kettle-jem.yml` and
 may be higher than the gem's runtime compatibility floor when legacy Rubies are
 not practical for the current toolchain.
@@ -271,7 +270,7 @@ For most applications, prefer the [Pessimistic Version Constraint][📌pvc] with
 For example:
 
 ```ruby
-spec.add_dependency("activesupport-broadcast_logger", "~> 2.0")
+spec.add_dependency("activesupport-broadcast_logger", "~> 3.0")
 ```
 
 <details markdown="1">
@@ -429,16 +428,12 @@ Thanks for RTFM. ☺️
 [🏀codecovi]: https://codecov.io/gh/galtzo-floss/activesupport-broadcast_logger/graph/badge.svg
 [🏀coveralls]: https://coveralls.io/github/galtzo-floss/activesupport-broadcast_logger?branch=main
 [🏀coveralls-img]: https://coveralls.io/repos/github/galtzo-floss/activesupport-broadcast_logger/badge.svg?branch=main
-[🚎ruby-2.7-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/ruby-2.7.yml
-[🚎ruby-3.0-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/ruby-3.0.yml
 [🚎ruby-3.1-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/ruby-3.1.yml
 [🚎ruby-3.2-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/ruby-3.2.yml
 [🚎ruby-3.3-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/ruby-3.3.yml
 [🚎ruby-3.4-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/ruby-3.4.yml
 [🚎jruby-9.4-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/jruby-9.4.yml
 [🚎jruby-10.0-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/jruby-10.0.yml
-[🚎truby-22.3-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/truffleruby-22.3.yml
-[🚎truby-23.0-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/truffleruby-23.0.yml
 [🚎truby-23.1-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/truffleruby-23.1.yml
 [🚎truby-24.2-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/truffleruby-24.2.yml
 [🚎truby-25.0-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/truffleruby-25.0.yml
@@ -463,16 +458,12 @@ Thanks for RTFM. ☺️
 [🚎14-🔓️-wfi]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/unlocked_deps.yml/badge.svg
 [🚎15-🪪-wf]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/license-eye.yml
 [🚎15-🪪-wfi]: https://github.com/galtzo-floss/activesupport-broadcast_logger/actions/workflows/license-eye.yml/badge.svg
-[💎ruby-2.7i]: https://img.shields.io/badge/Ruby-2.7-DF00CA?style=for-the-badge&logo=ruby&logoColor=white
-[💎ruby-3.0i]: https://img.shields.io/badge/Ruby-3.0-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.1i]: https://img.shields.io/badge/Ruby-3.1-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.2i]: https://img.shields.io/badge/Ruby-3.2-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.3i]: https://img.shields.io/badge/Ruby-3.3-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.4i]: https://img.shields.io/badge/Ruby-3.4-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-c-i]: https://img.shields.io/badge/Ruby-current-CC342D?style=for-the-badge&logo=ruby&logoColor=green
 [💎ruby-headi]: https://img.shields.io/badge/Ruby-HEAD-CC342D?style=for-the-badge&logo=ruby&logoColor=blue
-[💎truby-22.3i]: https://img.shields.io/badge/Truffle_Ruby-22.3-34BCB1?style=for-the-badge&logo=ruby&logoColor=pink
-[💎truby-23.0i]: https://img.shields.io/badge/Truffle_Ruby-23.0-34BCB1?style=for-the-badge&logo=ruby&logoColor=pink
 [💎truby-23.1i]: https://img.shields.io/badge/Truffle_Ruby-23.1-34BCB1?style=for-the-badge&logo=ruby&logoColor=pink
 [💎truby-24.2i]: https://img.shields.io/badge/Truffle_Ruby-24.2-34BCB1?style=for-the-badge&logo=ruby&logoColor=pink
 [💎truby-25.0i]: https://img.shields.io/badge/Truffle_Ruby-25.0-34BCB1?style=for-the-badge&logo=ruby&logoColor=pink
