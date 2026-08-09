@@ -93,6 +93,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Restore the BroadcastLogger version namespace after templating.
 
+- Fix cross-gem README Markdown references before release.
+
 ### Security
 
 ## [2.0.4] - 2025-02-24
