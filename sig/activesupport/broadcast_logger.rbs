@@ -11,6 +11,10 @@ module ActiveSupport
   end
   VERSION: String
   module BroadcastLogger
+    module Version
+      VERSION: String
+    end
+    VERSION: String
   end
 
   module BroadcastLoggerVersion
