@@ -41,6 +41,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Restore the BroadcastLogger class-shaped version namespace after an earlier template pass.
+
 ### Security
 
 ## [3.0.0] - 2026-08-09
