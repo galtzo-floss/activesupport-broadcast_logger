@@ -3,7 +3,7 @@
     [251, 3, 16, "Rake/DuplicateTask: Task `test` is defined at both Rakefile:244 and Rakefile:251.", 850263259],
     [254, 3, 16, "Rake/DuplicateTask: Task `spec` is defined at both Rakefile:230 and Rakefile:254.", 2494909563]
   ],
-  "activesupport-broadcast_logger.gemspec:618108280": [
+  "activesupport-broadcast_logger.gemspec:3574515032": [
     [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
   ],
   "spec/activesupport/broadcast_logger_spec.rb:3856026202": [

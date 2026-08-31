@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module ActiveSupport
-  class BroadcastLogger
+  module BroadcastLogger
     # Version namespace for this gem.
     module Version
       # Current gem version.
