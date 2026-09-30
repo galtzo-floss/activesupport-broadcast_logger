@@ -41,10 +41,19 @@
     {
       "file": "Appraisals",
       "lines": [
-        56,
-        61,
-        130,
-        136
+        60,
+        65,
+        137,
+        143
+      ]
+    }
+  ],
+  "exec_cmd: \"kettle-test\"\nrubygems: latest": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        43,
+        49
       ]
     }
   ],
