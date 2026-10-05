@@ -1,10 +1,19 @@
 {
+  "- gem: rubocop-packaging\ndirect: activesupport-broadcast_logger.gemspec": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        124,
+        129
+      ]
+    }
+  ],
   "action: remove_modular_gem\nreason: \"The gemspec owns the project's documentation dependency.\"": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
         117,
-        137
+        142
       ]
     }
   ],
@@ -13,8 +22,7 @@
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
         122,
-        127,
-        132
+        137
       ]
     }
   ],
@@ -23,7 +31,7 @@
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
         115,
-        135
+        140
       ]
     }
   ],
@@ -33,7 +41,7 @@
       "lines": [
         120,
         125,
-        130
+        135
       ]
     }
   ],
@@ -62,7 +70,7 @@
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
         116,
-        136
+        141
       ]
     }
   ],
@@ -71,8 +79,7 @@
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
         121,
-        126,
-        131
+        136
       ]
     }
   ]
