@@ -3,8 +3,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        124,
-        129
+        119,
+        124
       ]
     }
   ],
@@ -17,21 +17,12 @@
       ]
     }
   ],
-  "action: remove_modular_gem\nreason: \"The gemspec owns the project's documentation dependency.\"": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        117,
-        142
-      ]
-    }
-  ],
   "action: remove_modular_gem\nreason: \"The gemspec owns the project's style dependency.\"": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        122,
-        137
+        117,
+        132
       ]
     }
   ],
@@ -44,22 +35,13 @@
       ]
     }
   ],
-  "direct: activesupport-broadcast_logger.gemspec\nmodular: gemfiles/modular/documentation.gemfile": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        115,
-        140
-      ]
-    }
-  ],
   "direct: activesupport-broadcast_logger.gemspec\nmodular: gemfiles/modular/style.gemfile": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
+        115,
         120,
-        125,
-        135
+        130
       ]
     }
   ],
@@ -83,21 +65,12 @@
       ]
     }
   ],
-  "modular: gemfiles/modular/documentation.gemfile\naction: remove_modular_gem": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        116,
-        141
-      ]
-    }
-  ],
   "modular: gemfiles/modular/style.gemfile\naction: remove_modular_gem": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        121,
-        136
+        116,
+        131
       ]
     }
   ]
