@@ -111,11 +111,6 @@ dependency_conflicts:
       modular: gemfiles/modular/audit.gemfile
       action: remove_modular_gem
       reason: "The gemspec owns the project's audit dependency."
-    - gem: rdoc
-      direct: activesupport-broadcast_logger.gemspec
-      modular: gemfiles/modular/documentation.gemfile
-      action: remove_modular_gem
-      reason: "The gemspec owns the project's documentation dependency."
     - gem: rubocop-lts
       direct: activesupport-broadcast_logger.gemspec
       modular: gemfiles/modular/style.gemfile
