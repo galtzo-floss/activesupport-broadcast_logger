@@ -3,8 +3,11 @@
     [257, 3, 16, "Rake/DuplicateTask: Task `test` is defined at both Rakefile:250 and Rakefile:257.", 850263259],
     [260, 3, 16, "Rake/DuplicateTask: Task `spec` is defined at both Rakefile:236 and Rakefile:260.", 2494909563]
   ],
-  "activesupport-broadcast_logger.gemspec:1842277193": [
+  "activesupport-broadcast_logger.gemspec:2395578174": [
     [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.7, which may be specified in .rubocop.yml) should be equal.", 4072465588]
+  ],
+  "gemfiles/modular/style_local.gemfile:1858046555": [
+    [71, 23, 20, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 1851388465]
   ],
   "spec/activesupport/broadcast_logger_spec.rb:3856026202": [
     [3, 1, 45, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/broadcast_logger*_spec.rb`.", 3293372633],
