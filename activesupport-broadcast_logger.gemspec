@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter H. Boling", "Annibelle Boling"]
   spec.email = ["floss@galtzo.com"]
 
-  spec.summary = "💎 Rails v8 ActiveSupport::BroadcastLogger, fixed & backported to Rails v5.2+ & Ruby 2.7+"
-  spec.description = "💎 Rails v8 ActiveSupport::BroadcastLogger, fixed & backported to Rails v5.2+ & Ruby 2.7+"
+  spec.summary = "📡 Rails v8 ActiveSupport::BroadcastLogger, fixed & backported to Rails v5.2+ & Ruby 2.7+"
+  spec.description = "📡 Rails v8 ActiveSupport::BroadcastLogger, fixed & backported to Rails v5.2+ & Ruby 2.7+"
   spec.homepage = "https://github.com/galtzo-floss/activesupport-broadcast_logger"
   spec.licenses = ["MIT"]
   spec.required_ruby_version = ">= 3.1.0"
