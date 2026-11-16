@@ -58,11 +58,13 @@ end
 
 appraise "head" do
   eval_gemfile "modular/x_std_libs.gemfile"
+  eval_gemfile "modular/rspec_junit_formatter/r3.3/v0.8.gemfile"
   remove_gem "appraisal" # only present because it must be in the gemfile because we target a git branch
 end
 
 appraise "current" do
   eval_gemfile "modular/x_std_libs.gemfile"
+  eval_gemfile "modular/rspec_junit_formatter/r3.3/v0.8.gemfile"
   remove_gem "appraisal" # only present because it must be in the gemfile because we target a git branch
 end
 
@@ -72,22 +74,26 @@ end
 
 appraise "ruby-3-1" do
   eval_gemfile "modular/x_std_libs/r3.1/libs.gemfile"
+  eval_gemfile "modular/rspec_junit_formatter/r2/v0.6.gemfile"
   eval_gemfile "modular/json/v2.gemfile"
 end
 
 appraise "ruby-3-2" do
   eval_gemfile "modular/json/truffleruby_23_1.gemfile"
   eval_gemfile "modular/x_std_libs/r3/libs.gemfile"
+  eval_gemfile "modular/rspec_junit_formatter/r2/v0.6.gemfile"
   eval_gemfile "modular/activesupport/truffleruby_23_1.gemfile"
   eval_gemfile "modular/minitest/truffleruby_23_1.gemfile"
 end
 
 appraise "ruby-3-3" do
   eval_gemfile "modular/x_std_libs/r3/libs.gemfile"
+  eval_gemfile "modular/rspec_junit_formatter/r3.3/v0.8.gemfile"
 end
 
 appraise "ruby-3-4" do
   eval_gemfile "modular/x_std_libs/r3/libs.gemfile"
+  eval_gemfile "modular/rspec_junit_formatter/r3.3/v0.8.gemfile"
 end
 
 appraise "as-5-2" do

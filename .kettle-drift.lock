@@ -45,14 +45,21 @@
       ]
     }
   ],
+  "eval_gemfile \"modular/rspec_junit_formatter/r3.3/v0.8.gemfile\"\nremove_gem \"appraisal\" # only present because it must be in the gemfile because we target a git branch": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        61,
+        67
+      ]
+    }
+  ],
   "eval_gemfile \"modular/x_std_libs.gemfile\"\nremove_gem \"appraisal\" # only present because it must be in the gemfile because we target a git branch": [
     {
       "file": "Appraisals",
       "lines": [
-        60,
-        65,
-        137,
-        143
+        143,
+        149
       ]
     }
   ],
