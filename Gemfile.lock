@@ -34,13 +34,13 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    activesupport-logger (3.0.1)
+    activesupport-logger (3.0.2)
       activesupport (>= 5.2)
       backports (~> 3.25, >= 3.25.0)
       logger (~> 1.6, >= 1.6.1)
       mutex_m (~> 0.1)
       stringio (>= 0.0.2)
-      version_gem (~> 1.1, >= 1.1.15)
+      version_gem (~> 1.1, >= 1.1.17)
     addressable (2.10.0)
       public_suffix (>= 2.0.2, < 8.0)
     anonymous_loader (0.1.5)
@@ -564,7 +564,7 @@ GEM
       power_assert
     thor (1.5.0)
     timecop (0.9.11)
-    timecop-rspec (1.0.3)
+    timecop-rspec (1.0.4)
       delegate (~> 0.1)
       rspec (~> 3.0)
       timecop (>= 0.7, < 1)
@@ -638,8 +638,8 @@ GEM
       nokogiri (>= 1.14.3, < 2)
     yard-timekeeper (0.2.11)
       version_gem (~> 1.1, >= 1.1.17)
-    yard-yaml (0.2.6)
-      version_gem (~> 1.1, >= 1.1.15)
+    yard-yaml (0.2.7)
+      version_gem (~> 1.1, >= 1.1.17)
       yaml-converter (~> 0.2)
     zeitwerk (2.8.3)
 
@@ -654,7 +654,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport-broadcast_logger!
-  addressable (>= 2.9.2, < 3)
+  addressable (>= 2.10.0, < 3)
   anonymous_loader (~> 0.1, >= 0.1.5)
   appraisal2 (~> 3.2, >= 3.2.6)
   appraisal2-rubocop (~> 1.0, >= 1.0.5)
@@ -663,13 +663,13 @@ DEPENDENCIES
   cgi (~> 0.5)
   debug (>= 1.11.1)
   erb (~> 6.0, >= 6.0.7)
-  gem_bench (~> 2.0, >= 2.0.5)
-  gitmoji-regex (~> 2.0, >= 2.0.16)
+  gem_bench (~> 2.0, >= 2.0.6)
+  gitmoji-regex (~> 2.0, >= 2.0.17)
   irb (~> 1.17)
-  kettle-changelog (~> 1.0, >= 1.0.19)
-  kettle-dev (~> 3.1, >= 3.1.29)
-  kettle-family (~> 1.3, >= 1.3.45)
-  kettle-soup-cover (~> 3.0, >= 3.0.16)
+  kettle-changelog (~> 1.0, >= 1.0.21)
+  kettle-dev (~> 3.1, >= 3.1.33)
+  kettle-family (~> 1.3, >= 1.3.52)
+  kettle-soup-cover (~> 3.0, >= 3.0.17)
   kettle-test (~> 2.0, >= 2.0.30)
   kramdown (~> 2.6, >= 2.6.1)
   kramdown-parser-gfm (~> 1.1)
@@ -680,7 +680,7 @@ DEPENDENCIES
   rake (~> 13.0)
   rbs (>= 4.2.0)
   reek (~> 6.6, >= 6.6.0)
-  require_bench (~> 1.0, >= 1.0.4)
+  require_bench (~> 1.0, >= 1.0.5)
   rspec (~> 3.13)
   rspec-block_is_expected (~> 1.0, >= 1.0.6)
   rubocop-gradual (~> 0.4, >= 0.4.0)
@@ -701,7 +701,7 @@ DEPENDENCIES
   yard (~> 0.9, >= 0.9.37)
   yard-fence (~> 0.9, >= 0.9.12)
   yard-junk (~> 0.1, >= 0.1.0)
-  yard-lint (~> 1.13, >= 1.13.1)
+  yard-lint (~> 1.15, >= 1.15.0)
   yard-relative_markdown_links (~> 0.6)
   yard-timekeeper (~> 0.2, >= 0.2.11)
   yard-yaml (~> 0.2, >= 0.2.6)
@@ -709,7 +709,7 @@ DEPENDENCIES
 CHECKSUMS
   activesupport (8.1.4.1) sha256=16ac4f341ca65c85a1fcdb8ac73f68891aae9e3c4a6f9c3a27daed8b00017ed7
   activesupport-broadcast_logger (3.0.1)
-  activesupport-logger (3.0.1) sha256=80fef0706c97d23c9ac1dc3da446dfe623684a60ca5a9459603f936889efa1a9
+  activesupport-logger (3.0.2) sha256=fafe7683987411fd1a84eb1d066d80d9735d17add128b8f341bde66c281dd78a
   addressable (2.10.0) sha256=5e13b9c001adf01dd65ad6e0d2a91d2bc07885c0ff2b83f48cbcd95e08d9de62
   anonymous_loader (0.1.5) sha256=c96a4a1b5f49f320037fae63e931ac15b3823686e4f0ee6f24f75a0ade4227cb
   ansi (1.6.1) sha256=0465a830a375a15f513096d7bbc1ff9fd49e5db94b6c598e5c25e63d1f3e55a9
@@ -880,7 +880,7 @@ CHECKSUMS
   test-unit (3.7.9) sha256=c4c555038bcc3d12157f5fc4bd57366ecd5bef55ea0fd8457e726af768f5d857
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
   timecop (0.9.11) sha256=41284dc6e5041f2184f781ace766f942108c842f8d8c1386a26e6343decc7542
-  timecop-rspec (1.0.3) sha256=005f14841bb606dcaefb060e321b5388e2e59537742bee8b3a9a9a40e598fab9
+  timecop-rspec (1.0.4) sha256=db9dd3a133a5dd087a6947ea64ddd6bc3cff2dc67d832b70c1b985e7aeee2cc5
   token-resolver (2.0.16) sha256=418b5881cd23beab719179a8f7ceeca7816e918ff9b1d462dd32eddc38c4ed8e
   toml-merge (7.1.20) sha256=c0948e2e8e53bc899cec6e68ae402d217b3de3049f643fa5686f499b5f977114
   toml-rb (4.2.2) sha256=b41cf36117bafab84c72017697ab49fe49a065e2bcfa6dffb704389fb7b0a60a
@@ -907,7 +907,7 @@ CHECKSUMS
   yard-lint (1.15.0) sha256=e96da1b8cd052c5af09616db7729c7e9aa651a984c63ea322f55c9e422e52480
   yard-relative_markdown_links (0.6.0) sha256=3e5ffa85cbad9bac70bee5421774b190fb25d3bdf489323a5b3534f647d1a70e
   yard-timekeeper (0.2.11) sha256=ee75f9c2c661bbc032316661b2cff7df40c8c96c9c8183cd3ba5ae09e88e6dae
-  yard-yaml (0.2.6) sha256=4d4ecb669655403766c1167e4bdaab0a3921a66f263f1fb0ace9d6ea4699cb1c
+  yard-yaml (0.2.7) sha256=b4c1779e752d4f3720b5665941750b60b7626faac296c576ddf18684b9da5951
   zeitwerk (2.8.3) sha256=2c85125a8467ce069e20123d1e709a08955c9d29c118c25b46b7b7fafdbb92e5
 
 BUNDLED WITH
